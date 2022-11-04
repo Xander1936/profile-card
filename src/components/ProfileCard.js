@@ -2,7 +2,6 @@ import React from "react";
 import '../App.css'
 
 
-
 //ProfileCard component destructuring ES6 with the image, 
 //name, title and description as parameters
 const ProfileCard = ({ image, name, title, description }) => {

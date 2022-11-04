@@ -1,30 +1,24 @@
 import React from 'react';
 import ProfileCard from './components/ProfileCard';
+import profiles from './components/fakeData';
 import './App.css';
-
 
 function App() {
   return (
-    //Add the Profile Card Component dynamically
-    <div div className="App">
-      <ProfileCard 
-        image = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFcvi3KAWzU_9CGuuJ32Vz5tWvmxqUjGd63w&usqp=CAU' 
-        name ='Bob Smith' 
-        title ='Senior Developer' 
-        description ="I love to Code 24/7. I have 27+ years experience 💻. My hobbies are football ⚽, NBA 🏀 and Cycling 🚲 (Tour de France in particular). "
-      />
-      <ProfileCard 
-        image = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPWqKMT_iQVuSo6Hw15RoA7Ch01r1bLX2_fQ&usqp=CAU' 
-        name ='Rafeh Qazi' 
-        title ='Senior Developer. 🚀' 
-        description ="I love to Code, i'm the fastest Coder of the far West. 'Dev' is my nickname 😎🤩."
-      />
-      <ProfileCard 
-        image = 'https://mobimg.b-cdn.net/v3/fetch/50/5081f28733ce69397d496a2dfdcedc2d.jpeg' 
-        name ='Alexandre Massoda' 
-        title ='React Developer' 
-        description = "I love to Code, i'm a huge Fan of football ⚽, Eminem 🎼 and Steph Curry 🏀. I'm also a React Developer."
-      />
+    <div className="App">
+    {/*Add the Profile Card Component dynamically
+    Loop throw the fakeData array and build the profileCard
+    */}
+      {profiles.map(profile => (
+        <ProfileCard 
+          image={profile.image}
+          title={profile.title}
+          name={profile.name}
+          description={profile.description}
+        />
+      ))}
     </div>
-)}
+ );
+} 
+
 export default App;
