@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+}
+.root{
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+#root {
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.profile{
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: block;
+  width: 400px;
+  height: 120px;
+  justify-content: left;
+  align-items: center;
+}
