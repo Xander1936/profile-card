@@ -10,7 +10,7 @@ const ProfileCard = ({ image, name, title, description }) => {
             backgroundColor: "white",
             margin: 15,
             padding: 5,
-            borderRadius: 5,
+            borderRadius: 10,
             justifyContent: "center",
             alignItems: "center"
         }}>
