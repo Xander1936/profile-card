@@ -8,9 +8,8 @@ const ProfileCard = ({ image, name, title, description }) => {
     return(
         <div className="card" style={{
             backgroundColor: "white",
-            margin: 10,
-            marginRight: 10,
-            padding: 3,
+            margin: 15,
+            padding: 5,
             borderRadius: 10,
             justifyContent: "center",
             alignItems: "center"

@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
     {/*Add the Profile Card Component dynamically
     Loop throw the fakeData array and build the profileCard
     */}
